@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springBoot</groupId>
-	<artifactId>SpringBootH2DBExample</artifactId>
+	<artifactId>SpringBootH2DBUpdate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBootH2DBExample</name>
+	<name>SpringBootH2DBUpdate</name>
 	<description>Demo project for Spring Boot Rest Example</description>
 
 	<properties>

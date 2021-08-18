@@ -1,3 +1,3 @@
-INSERT INTO CITY (city_name, city_pincode) VALUES ('Delhi', 110001);  
-INSERT INTO CITY (city_name, city_pincode) VALUES ('Kanpur', 208001);  
-INSERT INTO CITY (city_name, city_pincode) VALUES ('Lucknow', 226001);
+INSERT INTO STUDENT (NAME, SUBJECT,COURSE) VALUES ('Dinesh', 'Computer','Java');  
+INSERT INTO STUDENT (NAME, SUBJECT,COURSE) VALUES ('Raj', 'Network','CCNA');
+INSERT INTO STUDENT (NAME, SUBJECT,COURSE) VALUES ('Sam', 'E&TC','Embedded');
