@@ -1,17 +1,17 @@
 package com.springBoot.demo.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Student {
 
-/*	@Id
+	@Id
 	@Column(name="ID")
 	private int id;
 	
-	@Id
 	@Column(name="NAME")
 	private String name;
 	
@@ -20,5 +20,5 @@ public class Student {
 	
 	@Column(name="COURSE")
 	private String course;
-*/	
+
 }
