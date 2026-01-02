@@ -3,16 +3,16 @@ package com.springBoot.demo.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import com.springBoot.demo.model.Student;
 import com.springBoot.demo.repository.StudentRepository;
 
 @Service
+@AllArgsConstructor
 public class StudentService {
 
-	@Autowired
 	private StudentRepository studentRepository;
 	
 	public List<Student> getStudentList(){
@@ -24,6 +24,7 @@ public class StudentService {
 	}
 
 	public Optional<Student> getStudentById(int id) {
+
 		return studentRepository.findById(id);
 	}
 
@@ -33,7 +34,7 @@ public class StudentService {
 					student ->{
 						student.setName(updatedStudent.getName());
 						student.setCourse(updatedStudent.getCourse());
-						student.setSubject(updatedStudent.getCourse());
+						student.setSubject(updatedStudent.getSubject());
 						return studentRepository.save(student);
 				}).orElse(null);
 
