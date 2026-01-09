@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "35821f1d-8260-4216-bbc6-3f2a27a16005",
+		"name": "SpringBootH2Example",
+		"description": "Spring boot application with Students having in-memory(H2) database. You can do crud operation using this collection. Also you can use dockerised images to build and run.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51097431",
+		"_collection_link": "https://dinesh-veer007-3742855.postman.co/workspace/15b9f7ea-7442-42d4-838b-7d09807d1468/collection/51097431-35821f1d-8260-4216-bbc6-3f2a27a16005?action=share&source=collection_link&creator=51097431"
+	},
+	"item": [
+		{
+			"name": "Get all students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				},
+				"description": "Get list of all available students in database"
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				},
+				"description": "Get the information of perticular student."
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Cathrin\",\n        \"subject\": \"Spring\",\n        \"course\": \"Computer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				},
+				"description": "Adding the information of new student in database"
+			},
+			"response": []
+		},
+		{
+			"name": "Update specific student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"Dinesh\",\n    \"subject\": \"Angular\",\n    \"course\": \"Computer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/student/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				},
+				"description": "Update the information of perticular student."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete student by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"3"
+					]
+				},
+				"description": "Delete the information of perticular student using student id."
+			},
+			"response": []
+		}
+	]
+}

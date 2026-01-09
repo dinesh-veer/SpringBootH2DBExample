@@ -97,8 +97,8 @@ The app will be accessible at: `http://localhost:8080`
 
 ### Accessing H2 Console
 
-* URL: `http://localhost:8080/h2-console`
-* JDBC URL: `jdbc:h2:mem:testdb`
+* URL: `http://localhost:8080/h2`
+* JDBC URL: `jdbc:h2:mem:memDb;DB_CLOSE_DELAY=-1`
 * Username: `sa`
 * Password: *(leave blank)*
 
@@ -118,7 +118,7 @@ spring.datasource.username=sa
 spring.datasource.password=
 
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.ddl-auto=none
 ```
 
 ---
