@@ -158,6 +158,15 @@ You can use Spring Boot Test and H2 to write integration tests without affecting
 
 ---
 
+## ⭐ Support This Repository
+
+If you find these Docker examples helpful:
+
+⭐ Star the repository\
+🍴 Fork it\
+📢 Share it with others
+
+---
 ## 📝 License
 
 This project is licensed under the [MIT License](LICENSE).
@@ -175,3 +184,5 @@ For questions, feedback, or collaboration:
 🔗 GitHub: [@dinesh-veer](https://github.com/dinesh-veer)
 
 ---
+
+Happy coding! 🧠🔥
