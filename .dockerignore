@@ -1,0 +1,6 @@
+#For Dockerfile-1 all below needs to be commented
+target/
+.git
+.gitignore
+README.md
+*.log

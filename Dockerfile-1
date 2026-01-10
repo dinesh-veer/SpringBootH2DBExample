@@ -1,0 +1,18 @@
+#Sample Dockerfile useful for build in simple scenrio
+
+# Use a lightweight JDK runtime alpine image not supported with AMD
+FROM eclipse-temurin:17-jre
+
+LABEL authors="dinesh"
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the JAR from your build folder to the container
+COPY target/*.jar app.jar
+
+# Expose the port your app runs on
+EXPOSE 8080
+
+# Run the application
+ENTRYPOINT ["java", "-jar" , "app.jar"]
